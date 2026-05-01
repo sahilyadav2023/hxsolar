@@ -1,0 +1,59 @@
+import FadeIn from '../../components/animations/FadeIn';
+
+const Contact = () => {
+  return (
+    <div className="page-container" style={{ paddingTop: '120px', paddingBottom: '80px', backgroundColor: 'var(--color-bg-main)' }}>
+      <div className="container">
+        <FadeIn>
+          <span className="subtitle text-accent">Contact Us</span>
+          <h1 className="title" style={{ marginBottom: '20px' }}>Get in Touch</h1>
+          <p className="text-muted" style={{ marginBottom: '60px', fontSize: '1.125rem' }}>Looking to switch to solar? Our experts are here to help.</p>
+
+          <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '60px' }}>
+            <div className="contact-info">
+              <h3 className="text-2xl text-primary mb-6">Contact Information</h3>
+              <ul style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <li style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                  <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(164, 214, 94, 0.2)', color: 'var(--color-primary)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>✉</div>
+                  <a href="mailto:info@helioxara.com" className="text-muted">info@helioxara.com</a>
+                </li>
+                <li style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                  <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(164, 214, 94, 0.2)', color: 'var(--color-primary)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>☏</div>
+                  <span className="text-muted">+91 XXXXX XXXXX</span>
+                </li>
+                <li style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                  <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(164, 214, 94, 0.2)', color: 'var(--color-primary)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>📍</div>
+                  <span className="text-muted">Your City, State, India</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="contact-form-wrapper" style={{ backgroundColor: '#fff', padding: '40px', borderRadius: '16px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)' }}>
+              <form style={{ display: 'flex', flexDirection: 'column', gap: '20px' }} onSubmit={(e) => e.preventDefault()}>
+                <div>
+                  <label htmlFor="name" style={{ display: 'block', marginBottom: '8px', color: 'var(--color-primary)', fontWeight: '500' }}>Name</label>
+                  <input type="text" id="name" placeholder="John Doe" style={{ width: '100%', padding: '12px 16px', borderRadius: '8px', border: '1px solid var(--color-border)', outline: 'none' }} />
+                </div>
+                <div>
+                  <label htmlFor="phone" style={{ display: 'block', marginBottom: '8px', color: 'var(--color-primary)', fontWeight: '500' }}>Phone Number</label>
+                  <input type="tel" id="phone" placeholder="+91 00000 00000" style={{ width: '100%', padding: '12px 16px', borderRadius: '8px', border: '1px solid var(--color-border)', outline: 'none' }} />
+                </div>
+                <div>
+                  <label htmlFor="email" style={{ display: 'block', marginBottom: '8px', color: 'var(--color-primary)', fontWeight: '500' }}>Email</label>
+                  <input type="email" id="email" placeholder="john@example.com" style={{ width: '100%', padding: '12px 16px', borderRadius: '8px', border: '1px solid var(--color-border)', outline: 'none' }} />
+                </div>
+                <div>
+                  <label htmlFor="requirement" style={{ display: 'block', marginBottom: '8px', color: 'var(--color-primary)', fontWeight: '500' }}>Requirement</label>
+                  <textarea id="requirement" placeholder="Tell us about your project..." rows="4" style={{ width: '100%', padding: '12px 16px', borderRadius: '8px', border: '1px solid var(--color-border)', outline: 'none', resize: 'vertical' }}></textarea>
+                </div>
+                <button type="submit" className="btn btn-primary" style={{ marginTop: '10px' }}>Submit Request</button>
+              </form>
+            </div>
+          </div>
+        </FadeIn>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
