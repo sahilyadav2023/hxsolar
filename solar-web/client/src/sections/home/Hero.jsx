@@ -62,7 +62,7 @@ const Hero = () => {
         <div className="hero-visual">
           <FadeIn delay={0.2}>
             <div className="hero-image-wrapper">
-              <img src="/hero.png" alt="Wind turbines and solar panels" className="hero-image" />
+              <img src="/hero.jpg" alt="Wind turbines and solar panels" className="hero-image" />
               
               <div className="floating-card top-right">
                 <div className="icon-wrapper bg-accent">

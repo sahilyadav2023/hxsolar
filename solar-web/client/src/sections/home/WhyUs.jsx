@@ -52,7 +52,7 @@ const WhyUs = () => {
         <div className="why-us-visual">
           <FadeIn delay={0.3}>
             <div className="image-frame">
-              <img src="/benefits.png" alt="Solar panels in a field" className="why-us-image" />
+              <img src="/benefits.jpg" alt="Solar panels in a field" className="why-us-image" />
               <div className="image-overlay"></div>
             </div>
           </FadeIn>

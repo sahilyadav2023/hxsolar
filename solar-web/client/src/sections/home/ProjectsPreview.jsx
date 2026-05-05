@@ -9,25 +9,25 @@ const projects = [
     id: '01',
     title: 'Rooftop Solar Installations',
     location: 'Residential & Commercial',
-    image: '/projects.png'
+    image: '/projects.jpg'
   },
   {
     id: '02',
     title: 'Industrial Ground Mount',
     location: 'Large Scale Facilities',
-    image: '/benefits.png'
+    image: '/benefits.jpg'
   },
   {
     id: '03',
     title: 'Utility Scale Solar Plants',
     location: 'Grid-Connected Farms',
-    image: '/hero.png'
+    image: '/hero.jpg'
   },
   {
     id: '04',
     title: 'PM-KUSUM Projects',
     location: 'Government Initiatives',
-    image: '/projects.png'
+    image: '/projects.jpg'
   }
 ];
 
