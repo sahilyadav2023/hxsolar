@@ -33,9 +33,9 @@ const Hero = () => {
               <Link to="/contact" className="btn btn-primary hero-btn">
                 Get Free Quote <ArrowRight size={18} />
               </Link>
-              <Link to="/savings" className="btn btn-outline hero-btn">
+              <a href="#calculator" className="btn btn-outline hero-btn">
                 Calculate Savings
-              </Link>
+              </a>
             </div>
           </SlideUp>
 

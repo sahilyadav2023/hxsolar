@@ -13,7 +13,7 @@ const Impact = () => {
   const treesPlanted = Math.round((billAmount / 1000) * 2.5);
 
   return (
-    <section className="impact section-padding">
+    <section className="impact section-padding" id="calculator">
       <div className="container">
         <div className="impact-grid">
           
