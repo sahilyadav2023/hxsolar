@@ -30,6 +30,7 @@ const Footer = () => {
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/careers">Careers</Link></li>
           </ul>
         </div>
 
@@ -48,15 +49,15 @@ const Footer = () => {
           <ul className="footer-contact">
             <li>
               <Mail size={18} className="contact-icon" />
-              <a href="mailto:info@helioxara.com">info@helioxara.com</a>
+              <a href="mailto:hxsolar01@gmail.com">hxsolar01@gmail.com</a>
             </li>
             <li>
               <Phone size={18} className="contact-icon" />
-              <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
+              <a href="tel:+919928224448">+91 99282 24448</a>
             </li>
             <li>
               <MapPin size={18} className="contact-icon" />
-              <span>Your City, State, India</span>
+              <span>Jaipur, Rajasthan, India</span>
             </li>
           </ul>
         </div>

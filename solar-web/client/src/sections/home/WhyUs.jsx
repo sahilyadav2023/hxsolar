@@ -24,7 +24,14 @@ const benefits = [
 
 const WhyUs = () => {
   return (
-    <section className="why-us section-padding bg-primary">
+    <section className="why-us section-padding">
+      {/* Background Image */}
+      <div className="why-us-bg">
+        <img src="/why-hx-solar-bg.jpg" alt="" className="why-us-bg-img" />
+        <div className="why-us-bg-overlay"></div>
+      </div>
+
+      {/* Content */}
       <div className="container why-us-container">
         <div className="why-us-content">
           <FadeIn>
@@ -49,11 +56,24 @@ const WhyUs = () => {
           </div>
         </div>
 
-        <div className="why-us-visual">
-          <FadeIn delay={0.3}>
-            <div className="image-frame">
-              <img src="/benefits.jpg" alt="Solar panels in a field" className="why-us-image" />
-              <div className="image-overlay"></div>
+        {/* Stats on the right side */}
+        <div className="why-us-stats">
+          <FadeIn delay={0.2}>
+            <div className="stat-card">
+              <span className="stat-number">500+</span>
+              <span className="stat-label">Installations Completed</span>
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.35}>
+            <div className="stat-card">
+              <span className="stat-number">50 MW+</span>
+              <span className="stat-label">Capacity Delivered</span>
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.5}>
+            <div className="stat-card">
+              <span className="stat-number">98%</span>
+              <span className="stat-label">Client Satisfaction</span>
             </div>
           </FadeIn>
         </div>
