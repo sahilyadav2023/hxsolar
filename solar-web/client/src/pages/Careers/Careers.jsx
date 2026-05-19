@@ -56,7 +56,7 @@ const Careers = () => {
       `${resumeFile ? `[REMINDER: Please attach your resume file "${resumeFile.name}" to this email before sending]` : '[No resume was selected]'}`
     );
 
-    window.location.href = `mailto:hxsolar01@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:carrer@hxsolar.in?subject=${subject}&body=${body}`;
     setStatus('Opening your email client — please attach your resume before sending!');
     setTimeout(() => setStatus(''), 5000);
   };
@@ -195,7 +195,7 @@ const Careers = () => {
               <div className="form-actions">
                 <button type="submit" className="btn btn-primary btn-lg">Submit Application</button>
                 <p className="form-note">
-                  Your application will be sent to <strong>hxsolar01@gmail.com</strong>. Please remember to attach your resume in the email.
+                  Your application will be sent to <strong>carrer@hxsolar.in</strong>. Please remember to attach your resume in the email.
                 </p>
               </div>
 

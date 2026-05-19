@@ -18,7 +18,7 @@ const Contact = () => {
     const body = encodeURIComponent(
       `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nRequirement:\n${requirement}`
     );
-    window.location.href = `mailto:hxsolar01@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@hxsolar.in?subject=${subject}&body=${body}`;
     setStatus('Opening your email client...');
     setTimeout(() => setStatus(''), 3000);
   };
@@ -37,7 +37,7 @@ const Contact = () => {
               <ul style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <li style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                   <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(164, 214, 94, 0.2)', color: 'var(--color-primary)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>✉</div>
-                  <a href="mailto:hxsolar01@gmail.com" className="text-muted">hxsolar01@gmail.com</a>
+                  <a href="mailto:info@hxsolar.in" className="text-muted">info@hxsolar.in</a>
                 </li>
                 <li style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                   <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(164, 214, 94, 0.2)', color: 'var(--color-primary)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>☏</div>

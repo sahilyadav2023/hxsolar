@@ -49,7 +49,7 @@ const Footer = () => {
           <ul className="footer-contact">
             <li>
               <Mail size={18} className="contact-icon" />
-              <a href="mailto:hxsolar01@gmail.com">hxsolar01@gmail.com</a>
+              <a href="mailto:info@hxsolar.in">info@hxsolar.in</a>
             </li>
             <li>
               <Phone size={18} className="contact-icon" />
