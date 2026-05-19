@@ -40,6 +40,7 @@ const Navbar = () => {
           <Link to="/services" className={location.pathname === '/services' ? 'active' : ''}>Services</Link>
           <Link to="/projects" className={location.pathname === '/projects' ? 'active' : ''}>Projects</Link>
           <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>
+          <Link to="/careers" className={location.pathname === '/careers' ? 'active' : ''}>Careers</Link>
           <Link to="/contact" className="btn btn-mobile-cta">Get Free Quote</Link>
         </nav>
 
