@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -30,8 +30,7 @@ const Navbar = () => {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-icon">HX</span>
-          <span className="logo-text">Solar</span>
+          <img src="/hx-solar-logo.png" alt="HX Solar - Shaping Energy with Sunlight" className="navbar-logo-img" />
         </Link>
 
         <nav className={`navbar-links ${isOpen ? 'active' : ''}`}>
@@ -39,13 +38,15 @@ const Navbar = () => {
           <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About</Link>
           <Link to="/services" className={location.pathname === '/services' ? 'active' : ''}>Services</Link>
           <Link to="/projects" className={location.pathname === '/projects' ? 'active' : ''}>Projects</Link>
-          <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>
           <Link to="/careers" className={location.pathname === '/careers' ? 'active' : ''}>Careers</Link>
+          <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>
           <Link to="/contact" className="btn btn-mobile-cta">Get Free Quote</Link>
         </nav>
 
         <div className="navbar-actions">
-          <Link to="/contact" className="btn btn-primary d-none-sm">Get Free Quote</Link>
+          <Link to="/contact" className="btn btn-primary btn-cta d-none-sm">
+            Get Free Quote <ArrowRight size={16} />
+          </Link>
           <button className="mobile-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
