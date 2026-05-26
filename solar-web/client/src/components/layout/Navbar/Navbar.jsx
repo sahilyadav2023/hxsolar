@@ -44,9 +44,6 @@ const Navbar = () => {
         </nav>
 
         <div className="navbar-actions">
-          <Link to="/contact" className="btn btn-primary btn-cta d-none-sm">
-            Get Free Quote <ArrowRight size={16} />
-          </Link>
           <button className="mobile-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

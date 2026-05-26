@@ -62,7 +62,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="social-proof-text">
-                <strong>10K+</strong>
+                <strong>50+</strong>
                 <span>Happy Customers</span>
               </div>
             </div>
@@ -96,7 +96,7 @@ const Hero = () => {
                   <Sun size={22} color="#22c55e" />
                 </div>
                 <div className="stat-info">
-                  <h3 className="stat-value">10K+</h3>
+                  <h3 className="stat-value">50+</h3>
                   <p className="stat-label">Installations</p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ const Hero = () => {
                   <Users size={22} color="#22c55e" />
                 </div>
                 <div className="stat-info">
-                  <h3 className="stat-value">10K+</h3>
+                  <h3 className="stat-value">50+</h3>
                   <p className="stat-label">Happy Customers</p>
                 </div>
               </div>

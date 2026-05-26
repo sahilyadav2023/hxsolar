@@ -52,11 +52,17 @@ const Footer = () => {
             </li>
             <li>
               <Phone size={18} className="contact-icon" />
-              <a href="tel:+919928224448">+91 99282 24448</a>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <a href="tel:+919928224448">+91 99282 24448</a>
+                <a href="tel:+919314516900">+91 93145 16900</a>
+              </div>
             </li>
             <li>
               <MapPin size={18} className="contact-icon" />
-              <span>Jaipur, Rajasthan, India</span>
+              <a href="https://www.google.com/maps?q=26.913618,75.717681" target="_blank" rel="noopener noreferrer" style={{ lineHeight: '1.4' }}>
+                Plot No. 2, Bhuvneshwari Vatika, Karni Palace, Jaipur
+                <span style={{ display: 'block', color: 'var(--color-accent)', fontSize: '0.875rem', marginTop: '4px', textDecoration: 'underline' }}>View Map ↗</span>
+              </a>
             </li>
           </ul>
         </div>

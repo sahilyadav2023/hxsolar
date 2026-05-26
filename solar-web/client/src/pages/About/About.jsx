@@ -67,7 +67,7 @@ const About = () => {
                 </p>
                 <div className="about-story-highlight">
                   <div className="highlight-item">
-                    <span className="highlight-value">500+</span>
+                    <span className="highlight-value">50+</span>
                     <span className="highlight-label">Projects Completed</span>
                   </div>
                   <div className="highlight-item">

@@ -40,12 +40,32 @@ const Contact = () => {
                   <a href="mailto:info@hxsolar.in" className="text-muted">info@hxsolar.in</a>
                 </li>
                 <li style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                  <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(164, 214, 94, 0.2)', color: 'var(--color-primary)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>☏</div>
-                  <a href="tel:+919928224448" className="text-muted">+91 99282 24448</a>
+                  <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(164, 214, 94, 0.2)', color: 'var(--color-primary)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexShrink: 0 }}>☏</div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <a href="tel:+919928224448" className="text-muted">+91 99282 24448</a>
+                    <a href="tel:+919314516900" className="text-muted">+91 93145 16900</a>
+                  </div>
                 </li>
-                <li style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                  <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(164, 214, 94, 0.2)', color: 'var(--color-primary)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>📍</div>
-                  <span className="text-muted">Jaipur, Rajasthan, India</span>
+                <li style={{ display: 'flex', gap: '15px', alignItems: 'flex-start' }}>
+                  <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(164, 214, 94, 0.2)', color: 'var(--color-primary)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexShrink: 0 }}>📍</div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', width: '100%' }}>
+                    <a href="https://www.google.com/maps?q=26.913618,75.717681" target="_blank" rel="noopener noreferrer" className="text-muted" style={{ lineHeight: '1.4' }}>
+                      Plot No. 2, Bhuvneshwari Vatika, Karni Palace, Jaipur
+                      <span style={{ display: 'inline-block', marginLeft: '8px', color: 'var(--color-primary)', fontSize: '0.875rem', fontWeight: '600', textDecoration: 'underline' }}>View on Map ↗</span>
+                    </a>
+                    <div style={{ width: '100%', height: '180px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)' }}>
+                      <iframe 
+                        src="https://maps.google.com/maps?q=26.913618,75.717681&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style={{ border: 0 }} 
+                        allowFullScreen="" 
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="HX Solar Location"
+                      ></iframe>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>

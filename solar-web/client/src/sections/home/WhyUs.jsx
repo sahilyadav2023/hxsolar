@@ -60,7 +60,7 @@ const WhyUs = () => {
         <div className="why-us-stats">
           <FadeIn delay={0.2}>
             <div className="stat-card">
-              <span className="stat-number">500+</span>
+              <span className="stat-number">50+</span>
               <span className="stat-label">Installations Completed</span>
             </div>
           </FadeIn>

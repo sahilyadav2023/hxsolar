@@ -6,31 +6,31 @@ import './ProjectsPreview.css';
 const galleryImages = [
   {
     id: 1,
-    src: '/industrial-rooftop-installation.jpg',
-    title: 'Industrial Rooftop Installation',
-    category: 'Rooftop',
-    description: 'Large-scale solar panel deployment on an industrial facility rooftop, maximizing energy output for commercial operations.',
+    src: '/solar-project-4.jpg',
+    title: 'Industrial Solar Farm',
+    category: 'Utility Scale',
+    description: 'Expansive utility-scale renewable energy farm delivering grid-connected clean energy across optimized arrays.',
   },
   {
     id: 2,
-    src: '/ground-mount-solar-farm.jpg',
-    title: 'Ground Mount Solar Farm',
+    src: '/solar-project-1.jpg',
+    title: 'Large-Scale Installation',
     category: 'Utility Scale',
-    description: 'Expansive ground-mounted solar farm delivering grid-connected clean energy across acres of optimized panel arrays.',
+    description: 'Vast arrays of high-efficiency solar panels set against modern urban infrastructure, optimizing energy generation.',
   },
   {
     id: 3,
-    src: '/commercial-rooftop-installation.jpg',
-    title: 'Commercial Rooftop Installation',
+    src: '/solar-project-2.jpg',
+    title: 'Professional Team Installation',
     category: 'Commercial',
-    description: 'Expert team installing high-efficiency solar panels on a commercial rooftop, reducing operational energy costs.',
+    description: 'Our expert team meticulously installing high-efficiency solar panels on a commercial rooftop.',
   },
   {
     id: 4,
-    src: '/residential-building-solar.jpg',
-    title: 'Residential Building Solar',
-    category: 'Residential',
-    description: 'Aerial view of a multi-story residential complex powered by rooftop solar — sustainable living at scale.',
+    src: '/solar-project-3.jpg',
+    title: 'On-Site System Diagnostics',
+    category: 'Commercial',
+    description: 'Specialized engineers conducting thorough system diagnostics and performance auditing to ensure optimal energy yield.',
   },
 ];
 
@@ -58,7 +58,7 @@ const ProjectsPreview = () => {
   // Autoplay
   useEffect(() => {
     if (!autoplay || isLightboxOpen) return;
-    const timer = setInterval(goNext, 4000);
+    const timer = setInterval(goNext, 2500);
     return () => clearInterval(timer);
   }, [autoplay, goNext, isLightboxOpen]);
 
@@ -96,7 +96,7 @@ const ProjectsPreview = () => {
             onMouseEnter={() => setAutoplay(false)}
             onMouseLeave={() => setAutoplay(true)}
           >
-            {/* Hero Image */}
+            {/* Hero Image Slider */}
             <div className="gallery-hero">
               <div className="gallery-hero-inner">
                 {galleryImages.map((img, i) => (
@@ -104,7 +104,7 @@ const ProjectsPreview = () => {
                     key={img.id}
                     src={img.src}
                     alt={img.title}
-                    className={`gallery-hero-img ${i === activeIndex ? 'active' : ''}`}
+                    className={`gallery-hero-img ${i === activeIndex ? 'active' : ''} ${i === (activeIndex - 1 + galleryImages.length) % galleryImages.length ? 'prev' : ''} ${i === (activeIndex + 1) % galleryImages.length ? 'next' : ''}`}
                   />
                 ))}
 
@@ -137,27 +137,10 @@ const ProjectsPreview = () => {
                   <div
                     className="gallery-progress-fill"
                     key={activeIndex}
-                    style={{ animationDuration: autoplay ? '4s' : '0s' }}
+                    style={{ animationDuration: autoplay ? '2.5s' : '0s' }}
                   />
                 </div>
               </div>
-            </div>
-
-            {/* Thumbnails */}
-            <div className="gallery-thumbnails">
-              {galleryImages.map((img, i) => (
-                <button
-                  key={img.id}
-                  className={`gallery-thumb ${i === activeIndex ? 'active' : ''}`}
-                  onClick={() => goTo(i)}
-                  aria-label={`View ${img.title}`}
-                >
-                  <img src={img.src} alt={img.title} />
-                  <div className="gallery-thumb-overlay">
-                    <span className="thumb-title">{img.title}</span>
-                  </div>
-                </button>
-              ))}
             </div>
 
             {/* Dot Indicators (mobile) */}
