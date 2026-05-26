@@ -8,8 +8,7 @@ const Footer = () => {
       <div className="container footer-container">
         <div className="footer-col about-col">
           <Link to="/" className="footer-logo">
-            <span className="logo-icon">HX</span>
-            <span className="logo-text">Solar</span>
+            <img src="/hx-solar-logo.png" alt="HX Solar - Shaping Energy with Sunlight" className="footer-logo-img" />
           </Link>
           <p className="text-muted mt-4">
             Powering a Sustainable Future with Smart Solar Solutions. End-to-end solar EPC solutions for residential, commercial, and utility-scale projects.
@@ -68,10 +67,6 @@ const Footer = () => {
           <p className="text-sm text-muted">
             &copy; {new Date().getFullYear()} Helioxara Solar Private Limited. All rights reserved.
           </p>
-          <div className="footer-legal">
-            <Link to="/privacy-policy" className="text-sm text-muted">Privacy Policy</Link>
-            <Link to="/terms" className="text-sm text-muted">Terms of Service</Link>
-          </div>
         </div>
       </div>
     </footer>

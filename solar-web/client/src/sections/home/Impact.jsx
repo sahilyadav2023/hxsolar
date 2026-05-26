@@ -95,7 +95,7 @@ const Impact = () => {
                   </div>
                 </div>
                 
-                <button className="btn btn-accent w-full mt-8">Get Detailed Quote</button>
+
               </div>
             </SlideUp>
           </div>
