@@ -62,8 +62,8 @@ const Hero = () => {
                 </div>
               </div>
               <div className="social-proof-text">
-                <strong>50+</strong>
-                <span>Happy Customers</span>
+                <strong>200+</strong>
+                <span>Satisfied Customers</span>
               </div>
             </div>
           </SlideUp>
@@ -96,7 +96,7 @@ const Hero = () => {
                   <Sun size={22} color="#22c55e" />
                 </div>
                 <div className="stat-info">
-                  <h3 className="stat-value">50+</h3>
+                  <h3 className="stat-value">200+</h3>
                   <p className="stat-label">Installations</p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ const Hero = () => {
                   <Zap size={22} color="#22c55e" />
                 </div>
                 <div className="stat-info">
-                  <h3 className="stat-value">100M+</h3>
+                  <h3 className="stat-value">10M+</h3>
                   <p className="stat-label">kWh Generated</p>
                 </div>
               </div>
@@ -123,8 +123,8 @@ const Hero = () => {
                   <Users size={22} color="#22c55e" />
                 </div>
                 <div className="stat-info">
-                  <h3 className="stat-value">50+</h3>
-                  <p className="stat-label">Happy Customers</p>
+                  <h3 className="stat-value">200+</h3>
+                  <p className="stat-label">Satisfied Customers</p>
                 </div>
               </div>
             </div>
