@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Linkedin, Instagram } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -14,10 +14,9 @@ const Footer = () => {
             Powering a Sustainable Future with Smart Solar Solutions. End-to-end solar EPC solutions for residential, commercial, and utility-scale projects.
           </p>
           <div className="social-links mt-6">
-            <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
-            <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
-            <a href="#" aria-label="LinkedIn"><Linkedin size={20} /></a>
-            <a href="#" aria-label="Instagram"><Instagram size={20} /></a>
+            <a href="https://www.facebook.com/profile.php?id=61590240429056" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
+            <a href="https://www.instagram.com/hxsolar_/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
+            <a href="https://www.linkedin.com/in/hx-solar-471ab5411/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
           </div>
         </div>
 
